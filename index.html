@@ -1,0 +1,1577 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Premium OTR tyres for mining and industrial sectors. 20+ years experience. New, used, and retreads. Professional repairs. On-site support. REMA certified. Level 2 B-BBEE.">
+    <meta name="keywords" content="OTR tyres, mining tyres, industrial tyres, South Africa, REMA certified, B-BBEE">
+    <meta name="author" content="OTR Tyre Solutions">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="OTR Tyre Solutions | Mining & Industrial Tyres South Africa">
+    <meta property="og:description" content="Premium OTR tyres for mining and industrial sectors. 20+ years experience. REMA certified. Level 2 B-BBEE.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="logo.png">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="OTR Tyre Solutions | Mining & Industrial Tyres">
+    <meta name="twitter:description" content="Premium OTR tyres for mining and industrial sectors. 20+ years experience.">
+
+    <title>OTR Tyre Solutions | Mining & Industrial Tyres South Africa</title>
+
+    <!-- Preconnect for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="dns-prefetch" href="https://wa.me">
+
+    <style>
+        /* ==================== CSS CUSTOM PROPERTIES ==================== */
+        :root {
+            /* Colors */
+            --color-bg-primary: #0a0a0a;
+            --color-bg-secondary: #0f0f0f;
+            --color-bg-tertiary: #1a1a1a;
+            --color-text-primary: #e8e8e8;
+            --color-text-secondary: #b8b8b8;
+            --color-text-tertiary: #888888;
+            --color-accent-primary: #FF8C00;
+            --color-accent-secondary: #FF6B00;
+            --color-border: rgba(255, 255, 255, 0.08);
+            --color-border-accent: rgba(255, 140, 0, 0.2);
+
+            /* Spacing (8-point grid system) */
+            --space-xs: 8px;
+            --space-sm: 16px;
+            --space-md: 24px;
+            --space-lg: 32px;
+            --space-xl: 48px;
+            --space-2xl: 64px;
+
+            /* Typography */
+            --font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, system-ui, sans-serif;
+            --font-size-base: 15px;
+            --font-size-sm: 13px;
+            --font-size-lg: 17px;
+            --font-size-xl: 22px;
+            --font-size-2xl: 38px;
+            --font-size-3xl: 50px;
+
+            /* Transitions */
+            --transition-fast: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+            --transition-base: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+            /* Shadows */
+            --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.12);
+            --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.15);
+            --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.2);
+            --shadow-accent: 0 4px 16px rgba(255, 140, 0, 0.25);
+        }
+
+        /* ==================== GLOBAL RESET ==================== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            font-size: 16px;
+        }
+
+        body {
+            font-family: var(--font-family);
+            background-color: var(--color-bg-primary);
+            color: var(--color-text-primary);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            padding-bottom: 80px;
+            font-size: var(--font-size-base);
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        /* Crisp image rendering with lazy loading support */
+        img {
+            image-rendering: -webkit-optimize-contrast;
+            image-rendering: crisp-edges;
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        main {
+            flex: 1;
+            contain: layout style paint;
+        }
+
+        /* Focus visible for accessibility */
+        *:focus-visible {
+            outline: 2px solid var(--color-accent-primary);
+            outline-offset: 2px;
+        }
+
+        /* ==================== TOP INFO BAR ==================== */
+        .top-info {
+            background: var(--color-bg-secondary);
+            border-bottom: 1px solid var(--color-border);
+            padding: var(--space-xs) 0;
+        }
+
+        .top-info-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 var(--space-md);
+            display: grid;
+            grid-template-columns: 1fr auto;
+            gap: var(--space-md);
+            align-items: center;
+            font-size: var(--font-size-sm);
+            color: var(--color-text-secondary);
+        }
+
+        .top-info-left {
+            display: flex;
+            align-items: center;
+            gap: var(--space-md);
+        }
+
+        .top-info-right {
+            display: flex;
+            gap: var(--space-md);
+        }
+
+        .top-info a {
+            color: var(--color-accent-primary);
+            text-decoration: none;
+            transition: color var(--transition-fast);
+            font-weight: 500;
+        }
+
+        .top-info a:hover {
+            color: var(--color-accent-secondary);
+        }
+
+        /* ==================== HEADER & NAVIGATION ==================== */
+        header {
+            background: var(--color-bg-primary);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--color-border);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: var(--shadow-md);
+            will-change: transform;
+            contain: layout style paint;
+        }
+
+        header.scrolled {
+            background: rgba(10, 10, 10, 0.85);
+            backdrop-filter: blur(20px);
+        }
+
+        nav {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 15px var(--space-md);
+            display: grid;
+            grid-template-columns: auto 1fr;
+            gap: var(--space-lg);
+            align-items: center;
+            position: relative;
+        }
+
+        .logo {
+            height: 48px;
+            transition: transform var(--transition-fast);
+            z-index: 1001;
+        }
+
+        .logo:hover {
+            transform: scale(1.05);
+        }
+
+        /* Hamburger Menu Button */
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 28px;
+            height: 22px;
+            background: transparent;
+            border: none;
+            cursor: pointer;
+            padding: 0;
+            z-index: 1001;
+            position: relative;
+            justify-self: end;
+        }
+
+        .hamburger span {
+            width: 100%;
+            height: 3px;
+            background: var(--color-text-primary);
+            border-radius: 2px;
+            transition: all var(--transition-base);
+            transform-origin: center;
+        }
+
+        .hamburger.active span:nth-child(1) {
+            transform: translateY(9.5px) rotate(45deg);
+        }
+
+        .hamburger.active span:nth-child(2) {
+            opacity: 0;
+            transform: scaleX(0);
+        }
+
+        .hamburger.active span:nth-child(3) {
+            transform: translateY(-9.5px) rotate(-45deg);
+        }
+
+        .nav-menu {
+            display: flex;
+            gap: 35px;
+            list-style: none;
+            align-items: center;
+            justify-self: end;
+        }
+
+        .nav-menu a {
+            color: var(--color-text-primary);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: var(--font-size-sm);
+            transition: color var(--transition-fast);
+            position: relative;
+            padding: var(--space-xs) 0;
+            min-height: 44px;
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-menu a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: linear-gradient(90deg, var(--color-accent-primary), var(--color-accent-secondary));
+            transition: width var(--transition-fast);
+        }
+
+        .nav-menu a:hover {
+            color: var(--color-accent-primary);
+        }
+
+        .nav-menu a:hover::after {
+            width: 100%;
+        }
+
+        .nav-cta {
+            background: linear-gradient(135deg, var(--color-accent-primary), var(--color-accent-secondary));
+            color: var(--color-bg-primary) !important;
+            padding: 10px 24px;
+            border-radius: 4px;
+            font-weight: 600;
+            box-shadow: var(--shadow-accent);
+            transition: all var(--transition-fast);
+            will-change: transform;
+        }
+
+        .nav-cta:hover {
+            transform: translateY(-2px) scale(1.02);
+            box-shadow: 0 6px 20px rgba(255, 140, 0, 0.4);
+        }
+
+        .nav-cta::after {
+            display: none;
+        }
+
+        /* ==================== HERO SECTION ==================== */
+        .hero {
+            background: linear-gradient(135deg, rgba(0, 0, 0, 0.85), rgba(10, 10, 10, 0.9)), url('skidmarks.png') center/cover;
+            padding: 80px var(--space-md) 80px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            contain: layout style paint;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(circle at 50% 50%, rgba(255, 140, 0, 0.08), transparent 70%);
+            pointer-events: none;
+        }
+
+        .hero-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-size: cover;
+            background-position: center;
+            will-change: transform;
+        }
+
+        .hero-content {
+            max-width: 900px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+            animation: fadeInUp 0.8s ease-out;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .hero h1 {
+            font-size: var(--font-size-3xl);
+            font-weight: 700;
+            margin-bottom: var(--space-md);
+            line-height: 1.2;
+            color: #ffffff;
+            text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+            letter-spacing: -0.02em;
+        }
+
+        .hero-highlight {
+            background: linear-gradient(135deg, var(--color-accent-primary), var(--color-accent-secondary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero p {
+            font-size: var(--font-size-lg);
+            color: var(--color-text-secondary);
+            margin-bottom: var(--space-lg);
+            font-weight: 300;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: var(--space-sm);
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--color-accent-primary), var(--color-accent-secondary));
+            color: var(--color-bg-primary);
+            padding: 14px 40px;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: 600;
+            font-size: var(--font-size-base);
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 44px;
+            transition: all var(--transition-fast);
+            box-shadow: var(--shadow-accent);
+            will-change: transform;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px) scale(1.02);
+            box-shadow: 0 8px 24px rgba(255, 140, 0, 0.4);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: #ffffff;
+            padding: 14px 40px;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: 600;
+            font-size: var(--font-size-base);
+            border: 2px solid rgba(255, 255, 255, 0.25);
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 44px;
+            transition: all var(--transition-fast);
+            backdrop-filter: blur(20px);
+        }
+
+        .btn-secondary:hover {
+            background: rgba(255, 255, 255, 0.08);
+            border-color: var(--color-accent-primary);
+            color: var(--color-accent-primary);
+            transform: translateY(-2px) scale(1.02);
+        }
+
+        /* ==================== STATS SECTION ==================== */
+        .stats {
+            background: var(--color-bg-secondary);
+            padding: var(--space-xl) var(--space-md);
+            border-top: 1px solid var(--color-border);
+            border-bottom: 1px solid var(--color-border);
+            contain: layout style;
+        }
+
+        .stats-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: var(--space-lg);
+        }
+
+        .stat-item {
+            text-align: center;
+            padding: var(--space-md);
+            background: rgba(255, 255, 255, 0.02);
+            border-radius: 8px;
+            border: 1px solid var(--color-border);
+            transition: all var(--transition-fast);
+            box-shadow: var(--shadow-sm);
+        }
+
+        .stat-item:hover {
+            background: rgba(255, 140, 0, 0.05);
+            border-color: var(--color-border-accent);
+            transform: translateY(-4px) scale(1.02);
+            box-shadow: var(--shadow-md);
+        }
+
+        .stat-number {
+            font-size: 42px;
+            font-weight: 700;
+            background: linear-gradient(135deg, var(--color-accent-primary), var(--color-accent-secondary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: var(--space-xs);
+            letter-spacing: -0.02em;
+        }
+
+        .stat-label {
+            color: var(--color-text-secondary);
+            font-size: var(--font-size-sm);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            font-weight: 500;
+        }
+
+        /* ==================== SERVICES SECTION ==================== */
+        .services {
+            padding: var(--space-2xl) var(--space-md);
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: var(--space-xl);
+        }
+
+        .section-title {
+            font-size: var(--font-size-2xl);
+            font-weight: 700;
+            margin-bottom: var(--space-sm);
+            color: #ffffff;
+            letter-spacing: -0.02em;
+        }
+
+        .section-subtitle {
+            color: var(--color-text-secondary);
+            font-size: var(--font-size-lg);
+            font-weight: 300;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: var(--space-md);
+        }
+
+        .service-card {
+            background: rgba(255, 255, 255, 0.02);
+            backdrop-filter: blur(20px);
+            border: 1px solid var(--color-border);
+            border-radius: 8px;
+            padding: var(--space-lg);
+            transition: all var(--transition-base);
+            position: relative;
+            overflow: hidden;
+            box-shadow: var(--shadow-sm);
+            contain: layout style paint;
+        }
+
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(90deg, var(--color-accent-primary), var(--color-accent-secondary));
+            transform: scaleX(0);
+            transition: transform var(--transition-base);
+        }
+
+        .service-card:hover {
+            transform: translateY(-6px) scale(1.02);
+            background: rgba(255, 140, 0, 0.04);
+            border-color: var(--color-border-accent);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .service-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .service-card img {
+            width: 100%;
+            height: 180px;
+            object-fit: contain;
+            margin-bottom: var(--space-md);
+            transition: transform var(--transition-fast);
+            aspect-ratio: 16/9;
+        }
+
+        .service-card:hover img {
+            transform: scale(1.05);
+        }
+
+        .service-badge {
+            display: inline-block;
+            background: rgba(255, 140, 0, 0.12);
+            color: var(--color-accent-primary);
+            padding: 6px 14px;
+            border-radius: 16px;
+            font-size: 11px;
+            font-weight: 600;
+            margin-bottom: var(--space-sm);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            border: 1px solid var(--color-border-accent);
+        }
+
+        .service-card h3 {
+            font-size: 22px;
+            margin-bottom: var(--space-sm);
+            color: #ffffff;
+            font-weight: 600;
+            letter-spacing: -0.01em;
+        }
+
+        .service-card p {
+            color: var(--color-text-secondary);
+            line-height: 1.7;
+            margin-bottom: var(--space-sm);
+            font-size: var(--font-size-base);
+        }
+
+        .service-card ul {
+            list-style: none;
+        }
+
+        .service-card li {
+            color: var(--color-text-secondary);
+            padding: var(--space-xs) 0;
+            padding-left: var(--space-md);
+            position: relative;
+            line-height: 1.6;
+            font-size: var(--font-size-base);
+        }
+
+        .service-card li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: var(--color-accent-primary);
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        /* ==================== ABOUT SECTION ==================== */
+        .about {
+            background: var(--color-bg-secondary);
+            padding: var(--space-2xl) var(--space-md);
+            border-top: 1px solid var(--color-border);
+            border-bottom: 1px solid var(--color-border);
+        }
+
+        .about-container {
+            max-width: 900px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .about h2 {
+            font-size: var(--font-size-2xl);
+            margin-bottom: var(--space-lg);
+            color: #ffffff;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+        }
+
+        .about p {
+            font-size: var(--font-size-base);
+            line-height: 1.8;
+            color: var(--color-text-secondary);
+            margin-bottom: var(--space-md);
+        }
+
+        .certifications {
+            display: flex;
+            justify-content: center;
+            gap: var(--space-xl);
+            margin-top: var(--space-xl);
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .cert-badge-large {
+            background: rgba(255, 255, 255, 0.02);
+            backdrop-filter: blur(20px);
+            padding: var(--space-md);
+            border-radius: 8px;
+            border: 1px solid var(--color-border);
+            transition: all var(--transition-fast);
+            box-shadow: var(--shadow-sm);
+        }
+
+        .cert-badge-large:hover {
+            background: rgba(255, 140, 0, 0.05);
+            border-color: var(--color-border-accent);
+            transform: translateY(-4px) scale(1.02);
+            box-shadow: var(--shadow-md);
+        }
+
+        .cert-badge-large img {
+            height: 60px;
+            aspect-ratio: 3/2;
+            object-fit: contain;
+        }
+
+        /* ==================== CONTACT SECTION ==================== */
+        .contact {
+            padding: var(--space-2xl) var(--space-md);
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: var(--space-xl);
+            margin-top: var(--space-xl);
+        }
+
+        .contact-form {
+            background: rgba(255, 255, 255, 0.02);
+            backdrop-filter: blur(20px);
+            padding: var(--space-xl);
+            border-radius: 8px;
+            border: 1px solid var(--color-border);
+            box-shadow: var(--shadow-sm);
+        }
+
+        .form-group {
+            margin-bottom: var(--space-md);
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px 16px;
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid var(--color-border);
+            border-radius: 4px;
+            font-size: var(--font-size-base);
+            font-family: inherit;
+            color: var(--color-text-primary);
+            transition: all var(--transition-fast);
+            min-height: 44px;
+        }
+
+        .form-group input::placeholder,
+        .form-group select::placeholder,
+        .form-group textarea::placeholder {
+            color: var(--color-text-tertiary);
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--color-accent-primary);
+            background: rgba(255, 140, 0, 0.04);
+            box-shadow: 0 0 0 3px rgba(255, 140, 0, 0.08);
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+
+        .form-group input:invalid:not(:placeholder-shown),
+        .form-group select:invalid:not(:placeholder-shown),
+        .form-group textarea:invalid:not(:placeholder-shown) {
+            border-color: #ff4444;
+        }
+
+        .contact-info {
+            padding: var(--space-sm) 0;
+        }
+
+        .contact-info-item {
+            margin-bottom: var(--space-md);
+            padding: var(--space-sm);
+            background: rgba(255, 255, 255, 0.02);
+            border-radius: 6px;
+            border-left: 3px solid var(--color-accent-primary);
+            transition: all var(--transition-fast);
+            box-shadow: var(--shadow-sm);
+        }
+
+        .contact-info-item:hover {
+            background: rgba(255, 140, 0, 0.04);
+            transform: translateX(4px);
+        }
+
+        .contact-info-item strong {
+            display: block;
+            color: var(--color-accent-primary);
+            margin-bottom: var(--space-xs);
+            font-size: var(--font-size-sm);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            font-weight: 600;
+        }
+
+        .contact-info-item p {
+            color: var(--color-text-secondary);
+            line-height: 1.7;
+            font-size: var(--font-size-base);
+        }
+
+        .contact-info a {
+            color: var(--color-text-primary);
+            text-decoration: none;
+            transition: color var(--transition-fast);
+        }
+
+        .contact-info a:hover {
+            color: var(--color-accent-primary);
+        }
+
+        /* ==================== FOOTER ==================== */
+        footer {
+            background: var(--color-bg-primary);
+            border-top: 1px solid var(--color-border-accent);
+            padding: var(--space-md) var(--space-md);
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: 900;
+            box-shadow: 0 -4px 16px rgba(0, 0, 0, 0.4);
+            backdrop-filter: blur(20px);
+        }
+
+        .brands-scroll {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            overflow: hidden;
+            scroll-snap-type: x mandatory;
+        }
+
+        .brands-container {
+            display: flex;
+            gap: 48px;
+            align-items: center;
+            animation: scroll 30s linear infinite;
+            flex-shrink: 0;
+            will-change: transform;
+        }
+
+        .brands-container img {
+            height: 32px;
+            filter: brightness(0) invert(1) opacity(0.35);
+            transition: all var(--transition-fast);
+            aspect-ratio: 3/1;
+            object-fit: contain;
+        }
+
+        .brands-container img:hover {
+            opacity: 0.7;
+            transform: scale(1.08);
+        }
+
+        @keyframes scroll {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+
+        .brands-scroll:hover .brands-container {
+            animation-play-state: paused;
+        }
+
+        /* ==================== RESPONSIVE DESIGN ==================== */
+        @media (max-width: 1024px) {
+            :root {
+                --font-size-3xl: 42px;
+                --font-size-2xl: 32px;
+            }
+
+            .services-grid,
+            .contact-grid {
+                grid-template-columns: 1fr;
+                gap: var(--space-md);
+            }
+
+            .nav-menu {
+                gap: 24px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            :root {
+                --font-size-3xl: 36px;
+                --font-size-2xl: 28px;
+                --font-size-xl: 20px;
+                --font-size-lg: 16px;
+            }
+
+            .top-info-container {
+                grid-template-columns: 1fr;
+                gap: var(--space-xs);
+                text-align: center;
+            }
+
+            .top-info-left,
+            .top-info-right {
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+
+            nav {
+                grid-template-columns: 1fr auto;
+                gap: 0;
+            }
+
+            .hamburger {
+                display: flex;
+            }
+
+            .nav-menu {
+                position: fixed;
+                top: 0;
+                right: -100%;
+                height: 100vh;
+                width: 280px;
+                background: var(--color-bg-primary);
+                flex-direction: column;
+                gap: 0;
+                padding: 80px var(--space-md) var(--space-xl);
+                box-shadow: -4px 0 20px rgba(0, 0, 0, 0.5);
+                transition: right var(--transition-base);
+                z-index: 1000;
+                overflow-y: auto;
+                -webkit-overflow-scrolling: touch;
+            }
+
+            .nav-menu.active {
+                right: 0;
+            }
+
+            .nav-menu li {
+                width: 100%;
+                border-bottom: 1px solid var(--color-border);
+            }
+
+            .nav-menu a {
+                display: block;
+                padding: var(--space-md) 0;
+                width: 100%;
+                text-align: left;
+                font-size: var(--font-size-base);
+            }
+
+            .nav-menu a::after {
+                display: none;
+            }
+
+            .nav-cta {
+                margin-top: var(--space-sm);
+                text-align: center;
+            }
+
+            /* Mobile Menu Overlay */
+            .menu-overlay {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100vh;
+                background: rgba(0, 0, 0, 0.7);
+                backdrop-filter: blur(4px);
+                opacity: 0;
+                visibility: hidden;
+                transition: all var(--transition-base);
+                z-index: 999;
+            }
+
+            .menu-overlay.active {
+                opacity: 1;
+                visibility: visible;
+            }
+
+            .hero {
+                padding: var(--space-2xl) var(--space-md);
+            }
+
+            .hero-buttons {
+                flex-direction: column;
+                width: 100%;
+            }
+
+            .hero-buttons a {
+                width: 100%;
+            }
+
+            .stats-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .certifications {
+                flex-direction: column;
+                gap: var(--space-md);
+            }
+
+            .contact-form {
+                padding: var(--space-md);
+            }
+
+            /* Prevent body scroll when menu is open */
+            body.menu-open {
+                overflow: hidden;
+            }
+        }
+
+        @media (max-width: 480px) {
+            :root {
+                --font-size-3xl: 28px;
+                --space-md: 16px;
+            }
+
+            body {
+                padding-bottom: 72px;
+            }
+
+            .nav-menu {
+                width: 100%;
+                right: -100%;
+            }
+
+            .nav-menu.active {
+                right: 0;
+            }
+
+            .hero {
+                padding: var(--space-xl) var(--space-sm);
+            }
+
+            .hero h1 {
+                font-size: 24px;
+            }
+
+            .services,
+            .about,
+            .contact {
+                padding: var(--space-xl) var(--space-sm);
+            }
+
+            .stats-container {
+                grid-template-columns: 1fr;
+            }
+
+            .btn-primary,
+            .btn-secondary {
+                padding: 14px 32px;
+                font-size: 15px;
+                min-height: 48px;
+            }
+
+            footer {
+                padding: var(--space-sm);
+            }
+
+            .brands-container {
+                gap: 32px;
+            }
+
+            .brands-container img {
+                height: 24px;
+            }
+
+            /* Larger touch targets for mobile */
+            .hamburger {
+                width: 44px;
+                height: 44px;
+                padding: 11px 8px;
+            }
+
+            .hamburger span {
+                height: 2px;
+            }
+
+            .hamburger.active span:nth-child(1) {
+                transform: translateY(7px) rotate(45deg);
+            }
+
+            .hamburger.active span:nth-child(3) {
+                transform: translateY(-7px) rotate(-45deg);
+            }
+        }
+
+        /* ==================== UTILITY CLASSES ==================== */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* ==================== PRINT STYLES ==================== */
+        @media print {
+            header,
+            footer,
+            .hero-buttons,
+            .contact-form {
+                display: none;
+            }
+        }
+    </style>
+
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "OTR Tyre Solutions",
+      "description": "Premium OTR tyres for mining and industrial sectors. 20+ years experience. New, used, and retreads. Professional repairs. On-site support.",
+      "image": "logo.png",
+      "telephone": "+27-11-900-1055",
+      "email": "sales@otr-tyre-solutions.co.za",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "2 Palmer Street (Corner Palmer & Bosworth Street)",
+        "addressLocality": "Alrode South",
+        "addressRegion": "Gauteng",
+        "addressCountry": "ZA"
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday"],
+          "opens": "07:00",
+          "closes": "16:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Friday",
+          "opens": "07:00",
+          "closes": "14:00"
+        }
+      ],
+      "priceRange": "$$",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "reviewCount": "150"
+      }
+    }
+    </script>
+</head>
+<body>
+    <!-- Top Info Bar -->
+    <div class="top-info">
+        <div class="top-info-container">
+            <div class="top-info-left">
+                <span>Mon-Thu: 7AM-4PM • Fri: 7AM-2PM</span>
+            </div>
+            <div class="top-info-right">
+                <a href="tel:0119001055">Office: 011 900 1055</a>
+                <a href="tel:0766606960">Sales: 076 660 6960</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header id="header">
+        <nav>
+            <img src="logo.png" alt="OTR Tyre Solutions" class="logo" loading="eager">
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact" class="nav-cta">Get Quote</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="menu-overlay" id="menuOverlay"></div>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>We specialise in supplying all leading <span class="hero-highlight">OTR Tyre brands</span> to the industry</h1>
+                <p>20 years of expertise • Global sourcing • Professional service</p>
+                <div class="hero-buttons">
+                    <a href="https://wa.me/27766606960" class="btn-primary" target="_blank" rel="noopener">Talk to our experts</a>
+                    <a href="mailto:sales@otr-tyre-solutions.co.za" class="btn-secondary">Email us</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Section -->
+        <section class="stats">
+            <div class="stats-container">
+                <div class="stat-item fade-in">
+                    <div class="stat-number">20+</div>
+                    <div class="stat-label">Years Experience</div>
+                </div>
+                <div class="stat-item fade-in">
+                    <div class="stat-number">1000+</div>
+                    <div class="stat-label">Projects Delivered</div>
+                </div>
+                <div class="stat-item fade-in">
+                    <div class="stat-number">10+</div>
+                    <div class="stat-label">Premium Brands</div>
+                </div>
+                <div class="stat-item fade-in">
+                    <div class="stat-number">Level 2</div>
+                    <div class="stat-label">B-BBEE Status</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="services">
+            <div class="section-header">
+                <h2 class="section-title">Our Services</h2>
+                <p class="section-subtitle">Complete tyre solutions for your fleet</p>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card fade-in">
+                    <img src="tyre-2-2.png" alt="Tyre Sales" loading="lazy" width="400" height="200">
+                    <span class="service-badge">New • Used • Retreads</span>
+                    <h3>Tyre Sales</h3>
+                    <p>Global sourcing network for all major brands. Competitive pricing with reliable delivery schedules.</p>
+                </div>
+
+                <div class="service-card fade-in">
+                    <img src="279-279.png" alt="Professional Tyre Repairs" loading="lazy" width="400" height="200">
+                    <span class="service-badge">REMA Certified</span>
+                    <h3>Professional Repairs</h3>
+                    <ul>
+                        <li>REMA approved technicians</li>
+                        <li>Comprehensive testing</li>
+                        <li>Open injury repairs</li>
+                        <li>Quality assurance</li>
+                    </ul>
+                </div>
+
+                <div class="service-card fade-in">
+                    <img src="tyre-3-1.png" alt="On-Site Support" loading="lazy" width="400" height="200">
+                    <span class="service-badge">Level 2 B-BBEE</span>
+                    <h3>On-Site Support</h3>
+                    <ul>
+                        <li>Fleet management</li>
+                        <li>Site surveys</li>
+                        <li>Performance analysis</li>
+                        <li>Tyre handlers</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about">
+            <div class="about-container">
+                <h2>Why Choose OTR Tyre Solutions</h2>
+                <p>With over 20 years of experience in the mining and industrial sectors, OTR Tyre Solutions has established itself as Southern Africa's trusted partner for premium OTR tyres.</p>
+                <p>Our extensive global network ensures access to all leading brands with competitive pricing and reliable delivery. We provide comprehensive solutions tailored to your operational requirements, from initial consultation to ongoing support.</p>
+                <p>As a Level 2 B-BBEE contributor, we combine business excellence with meaningful transformation.</p>
+
+                <div class="certifications">
+                    <div class="cert-badge-large fade-in">
+                        <img src="accreditation.png" alt="REMA Certification" loading="lazy" width="200" height="100">
+                    </div>
+                    <div class="cert-badge-large fade-in">
+                        <img src="bee-icon.png" alt="B-BBEE Level 2" loading="lazy" width="200" height="100">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Request a quote or speak with our sales team</p>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-form">
+                    <form id="contactForm" novalidate>
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="Your Name *" required minlength="2">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="company" placeholder="Company Name">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="Email *" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" name="phone" placeholder="Phone *" required pattern="[0-9]{10,}">
+                        </div>
+                        <div class="form-group">
+                            <select name="service" required>
+                                <option value="">Service Required *</option>
+                                <option value="new">New Tyres</option>
+                                <option value="used">Used Tyres</option>
+                                <option value="retreads">Retreads</option>
+                                <option value="repairs">Repairs</option>
+                                <option value="onsite">On-Site Support</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" placeholder="Message" rows="4"></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary" style="width: 100%; border: none; cursor: pointer;">Submit Enquiry</button>
+                    </form>
+                </div>
+
+                <div class="contact-info">
+                    <div class="contact-info-item">
+                        <strong>Phone</strong>
+                        <p>Office: <a href="tel:0119001055">011 900 1055</a></p>
+                        <p>Sales: <a href="tel:0766606960">076 660 6960</a></p>
+                    </div>
+
+                    <div class="contact-info-item">
+                        <strong>Email</strong>
+                        <p><a href="mailto:sales@otr-tyre-solutions.co.za">sales@otr-tyre-solutions.co.za</a></p>
+                        <p><a href="mailto:admin@otr-tyre-solutions.co.za">admin@otr-tyre-solutions.co.za</a></p>
+                    </div>
+
+                    <div class="contact-info-item">
+                        <strong>Location</strong>
+                        <p>2 Palmer Street<br>(Corner Palmer & Bosworth Street)<br>Alrode South, Gauteng</p>
+                    </div>
+
+                    <div class="contact-info-item">
+                        <strong>Hours</strong>
+                        <p>Mon-Thu: 7:00 AM - 4:00 PM<br>Friday: 7:00 AM - 2:00 PM</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="brands-scroll">
+            <div class="brands-container">
+                <img src="bridgestone-logo.png" alt="Bridgestone" loading="lazy" width="120" height="40">
+                <img src="good-year-logo.png" alt="Goodyear" loading="lazy" width="120" height="40">
+                <img src="firestone-logo.png" alt="Firestone" loading="lazy" width="120" height="40">
+                <img src="yokohama-logo.png" alt="Yokohama" loading="lazy" width="120" height="40">
+                <img src="boto-logo.png" alt="Boto" loading="lazy" width="120" height="40">
+                <img src="michelin-logo.png" alt="Michelin" loading="lazy" width="120" height="40">
+                <img src="dunlop-logo.png" alt="Dunlop" loading="lazy" width="120" height="40">
+                <img src="triangle-logo.png" alt="Triangle" loading="lazy" width="120" height="40">
+                <img src="tianli-logo.png" alt="Tianli" loading="lazy" width="120" height="40">
+                <img src="armour-logo.png" alt="Armour" loading="lazy" width="120" height="40">
+            </div>
+            <div class="brands-container" aria-hidden="true">
+                <img src="bridgestone-logo.png" alt="" loading="lazy" width="120" height="40">
+                <img src="good-year-logo.png" alt="" loading="lazy" width="120" height="40">
+                <img src="firestone-logo.png" alt="" loading="lazy" width="120" height="40">
+                <img src="yokohama-logo.png" alt="" loading="lazy" width="120" height="40">
+                <img src="boto-logo.png" alt="" loading="lazy" width="120" height="40">
+                <img src="michelin-logo.png" alt="" loading="lazy" width="120" height="40">
+                <img src="dunlop-logo.png" alt="" loading="lazy" width="120" height="40">
+                <img src="triangle-logo.png" alt="" loading="lazy" width="120" height="40">
+                <img src="tianli-logo.png" alt="" loading="lazy" width="120" height="40">
+                <img src="armour-logo.png" alt="" loading="lazy" width="120" height="40">
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // ==================== MOBILE MENU TOGGLE ====================
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('navMenu');
+        const menuOverlay = document.getElementById('menuOverlay');
+        const body = document.body;
+
+        function toggleMenu() {
+            const isOpen = navMenu.classList.contains('active');
+
+            if (isOpen) {
+                closeMenu();
+            } else {
+                openMenu();
+            }
+        }
+
+        function openMenu() {
+            hamburger.classList.add('active');
+            navMenu.classList.add('active');
+            menuOverlay.classList.add('active');
+            body.classList.add('menu-open');
+            hamburger.setAttribute('aria-expanded', 'true');
+        }
+
+        function closeMenu() {
+            hamburger.classList.remove('active');
+            navMenu.classList.remove('active');
+            menuOverlay.classList.remove('active');
+            body.classList.remove('menu-open');
+            hamburger.setAttribute('aria-expanded', 'false');
+        }
+
+        // Toggle menu on hamburger click
+        hamburger.addEventListener('click', toggleMenu);
+
+        // Close menu when clicking overlay
+        menuOverlay.addEventListener('click', closeMenu);
+
+        // Close menu when clicking a nav link
+        navMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                closeMenu();
+            });
+        });
+
+        // Close menu on escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && navMenu.classList.contains('active')) {
+                closeMenu();
+            }
+        });
+
+        // Handle window resize - close menu if resized to desktop
+        let resizeTimer;
+        window.addEventListener('resize', () => {
+            clearTimeout(resizeTimer);
+            resizeTimer = setTimeout(() => {
+                if (window.innerWidth > 768 && navMenu.classList.contains('active')) {
+                    closeMenu();
+                }
+            }, 250);
+        });
+
+        // ==================== SWIPE TO CLOSE MENU ====================
+        let touchStartX = 0;
+        let touchEndX = 0;
+
+        navMenu.addEventListener('touchstart', (e) => {
+            touchStartX = e.changedTouches[0].screenX;
+        }, { passive: true });
+
+        navMenu.addEventListener('touchend', (e) => {
+            touchEndX = e.changedTouches[0].screenX;
+            handleSwipe();
+        }, { passive: true });
+
+        function handleSwipe() {
+            const swipeDistance = touchEndX - touchStartX;
+            // Swipe right to close (swipe distance > 50px)
+            if (swipeDistance > 50) {
+                closeMenu();
+            }
+        }
+
+        // ==================== INTERSECTION OBSERVER FOR SCROLL ANIMATIONS ====================
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+        // ==================== STICKY HEADER WITH BACKDROP BLUR ====================
+        let lastScroll = 0;
+        const header = document.getElementById('header');
+
+        window.addEventListener('scroll', () => {
+            const currentScroll = window.pageYOffset;
+
+            if (currentScroll > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+
+            lastScroll = currentScroll;
+        }, { passive: true });
+
+        // ==================== SMOOTH SCROLL ====================
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    const headerOffset = 80;
+                    const elementPosition = target.getBoundingClientRect().top;
+                    const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+                    window.scrollTo({
+                        top: offsetPosition,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // ==================== FORM VALIDATION & SUBMISSION ====================
+        const form = document.getElementById('contactForm');
+
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            // Check validity
+            if (!form.checkValidity()) {
+                form.reportValidity();
+                return;
+            }
+
+            const btn = this.querySelector('button[type="submit"]');
+            const originalText = btn.textContent;
+            btn.textContent = 'Sending...';
+            btn.disabled = true;
+
+            // Get form data
+            const formData = new FormData(this);
+            const name = formData.get('name');
+            const company = formData.get('company') || 'N/A';
+            const email = formData.get('email');
+            const phone = formData.get('phone');
+            const service = formData.get('service');
+            const message = formData.get('message') || 'N/A';
+
+            // Send email using FormSubmit
+            const emailData = new FormData();
+            emailData.append('name', name);
+            emailData.append('company', company);
+            emailData.append('email', email);
+            emailData.append('phone', phone);
+            emailData.append('service', service);
+            emailData.append('message', message);
+            emailData.append('_subject', `New Enquiry from ${name} - OTR Tyre Solutions`);
+            emailData.append('_cc', email);
+            emailData.append('_template', 'table');
+
+            // Send to FormSubmit
+            fetch('https://formsubmit.co/bennokuhn1@icloud.com', {
+                method: 'POST',
+                body: emailData,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            })
+            .then(response => {
+                if (response.ok) {
+                    alert('Thank you! Your enquiry has been sent successfully.\n\nOur team will contact you within 24 hours.\n\nUrgent? Call: 076 660 6960');
+                    form.reset();
+                } else {
+                    throw new Error('Email submission failed');
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                alert('There was an issue submitting your enquiry. Please call us directly at 076 660 6960 or email sales@otr-tyre-solutions.co.za');
+            })
+            .finally(() => {
+                btn.textContent = originalText;
+                btn.disabled = false;
+            });
+        });
+
+        // Real-time validation feedback
+        form.querySelectorAll('input, select, textarea').forEach(field => {
+            field.addEventListener('blur', function() {
+                if (this.value && !this.checkValidity()) {
+                    this.style.borderColor = '#ff4444';
+                } else if (this.value) {
+                    this.style.borderColor = 'var(--color-accent-primary)';
+                }
+            });
+
+            field.addEventListener('input', function() {
+                if (this.checkValidity() || !this.value) {
+                    this.style.borderColor = '';
+                }
+            });
+        });
+
+        // ==================== PERFORMANCE: LAZY LOAD OPTIMIZATION ====================
+        if ('loading' in HTMLImageElement.prototype) {
+            // Browser supports native lazy loading
+            console.log('Native lazy loading supported');
+        } else {
+            // Fallback for browsers that don't support lazy loading
+            const script = document.createElement('script');
+            script.src = 'https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.2/lazysizes.min.js';
+            document.body.appendChild(script);
+        }
+
+        // ==================== PRELOAD CRITICAL ASSETS ====================
+        window.addEventListener('load', () => {
+            // Mark page as fully loaded
+            document.body.classList.add('loaded');
+        });
+    </script>
+</body>
+</html>
